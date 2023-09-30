@@ -8,7 +8,8 @@
     <title>Products</title>
 </head>
 <body>
-    <h1>Products</h1>
+    <div class="container align-items-center" style="width: 80%;">
+    <h1 class="center">Products Available</h1>
     <div>
         @if(session()->has('success'))
         <div>
@@ -21,7 +22,7 @@
         <div>
             <a href="{{route('product.create')}}">Create a product</a>  <!--route to create product page -->
         </div>
-        <table border="1" class="table">
+        <table border="1" class="table align-items-center">
             <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Name</th>
@@ -47,7 +48,8 @@
                     <form method='post' action="{{route('product.destroy', ['product' => $product])}}">
                         @csrf
                         @method('delete')
-                        <input type='submit' value='Delete' />
+                        <!-- <input type='submit' value='Delete' /> -->
+                        <button type="submit" class="btn btn-danger">Delete</button>
                     </form>
                 </td> 
             </tr>
@@ -57,4 +59,5 @@
         </table>
     </div>
 </body>
+</div>
 </html>
