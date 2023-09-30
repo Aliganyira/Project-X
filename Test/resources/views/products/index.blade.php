@@ -8,8 +8,8 @@
     <title>Products</title>
 </head>
 <body>
-    <div class="container align-items-center" style="width: 80%;">
-    <h1 class="center">Products Available</h1>
+    <div class="container align-items-center mt-5" style="width: 80%;">
+    <h1>Products Available</h1>
     <div>
         @if(session()->has('success'))
         <div>
@@ -20,7 +20,7 @@
     </div>
     <div>
         <div>
-            <a href="{{route('product.create')}}">Create a product</a>  <!--route to create product page -->
+            <a href="{{route('product.create')}}"> <button type="submit" class="btn btn-success mb-3 ">Create a product</button></a>  <!--route to create product page -->
         </div>
         <table border="1" class="table align-items-center">
             <tr>

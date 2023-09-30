@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Document</title>
+    <title>Crud</title>
 </head>
 <body>
-    <div class="container card" style="width: 40%;" >
-    <h1>Create a product</h1>
+    <div class="container card mt-5" style="width: 50%;" >
+    <h1 class="mb-5 mt-3">Create a product</h1>
     <div>
         @if($errors->any())
         <ul>
@@ -43,6 +43,7 @@
        <button type="submit" class="btn btn-primary">Save</button>
        </div>
     </form>
-    </div>
+    
 </body>
+</div>
 </html>
