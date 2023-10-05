@@ -9,7 +9,12 @@ class ProductController extends Controller
 {
     public function index(){
         $products = Product::all();    //get products from the model or db
-       return view('products.index', ['products' => $products]);  //pass it to index
+        return view('products.index', ['products' => $products]);  //pass it to index
+       
+    }
+
+    public function welcome(){
+       return view('welcome');  //home
        
     }
 

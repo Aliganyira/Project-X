@@ -41,9 +41,12 @@
        <div class="d-grid gap-2">
         <!-- <input type="submit" value="update"> -->
         <button type="submit" class="btn btn-primary">Update</button>
-        
+   
        </div>
     </form>
+    <div class="float-right ">
+            <a href="{{route('welcome')}}"> <button type="submit" class="btn btn-success mt-3 float-right ">Back to home</button></a>  <!--route to create product page -->
+        </div>
     </div>
 </body>
 </html>

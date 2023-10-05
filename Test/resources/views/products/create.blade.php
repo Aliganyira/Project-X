@@ -42,7 +42,11 @@
        <div>
        <button type="submit" class="btn btn-primary">Save</button>
        </div>
+       
     </form>
+    <div class="float-right ">
+            <a href="{{route('welcome')}}"> <button type="submit" class="btn btn-success mt-3 float-right ">Back to home</button></a>  <!--route to create product page -->
+        </div>
     
 </body>
 </div>

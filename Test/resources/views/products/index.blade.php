@@ -22,6 +22,9 @@
         <div>
             <a href="{{route('product.create')}}"> <button type="submit" class="btn btn-success mb-3 ">Create a product</button></a>  <!--route to create product page -->
         </div>
+        <div class="float-right ">
+            <a href="{{route('welcome')}}"> <button type="submit" class="btn btn-primary mb-3 float-right ">Back to home</button></a>  <!--route to create product page -->
+        </div>
         <table border="1" class="table align-items-center">
             <tr>
                 <th scope="col">ID</th>
