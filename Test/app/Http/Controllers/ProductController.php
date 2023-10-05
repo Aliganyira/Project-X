@@ -14,15 +14,15 @@ class ProductController extends Controller
     }
 
     public function create(){
-        $products = Product::all();
-        return view('products.create', ['products' => $products]);
+        
+        return view('products.create');
     }
     public function store(Request $request){
         // dd($request);
         $data = $request->validate([ 
             'name' => 'required',
-            'qty' => 'required|numeric',
-            'price' => 'required|decimal:0,2',
+            'qty' => 'required|decimal:0,1',
+            'price' => 'required|numeric',
             'description' => 'nullable'
         ]);
 
@@ -37,8 +37,8 @@ class ProductController extends Controller
     public function update(Product $product, Request $request){
         $data = $request->validate([ 
             'name' => 'required',
-            'qty' => 'required|numeric',
-            'price' => 'required|decimal:2,3',
+            'qty' => 'required|decimal:0,1',
+            'price' => 'required|numeric',
             'description' => 'nullable'
         ]);
 
@@ -50,6 +50,7 @@ class ProductController extends Controller
 
     public function destroy(Product $product){    //pass products
         $product->delete();
+
         return redirect(route('product.index'))->with('success', 'Product deleted Successfully');
 
     }
